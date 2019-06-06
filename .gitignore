@@ -1,2 +1,5 @@
 mars/target
+mars/build
+mars/dist
 .DS_Store
+

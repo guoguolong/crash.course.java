@@ -37,7 +37,7 @@ jar -tf ~/projs/mars/app.jar
 
 5. 分发完整的代码 
 
-javadoc com.banyuan.mars.parser -d ../docs
+javadoc com.banyuan.mars.library -d ../docs
 
 
 关于bootclasspath
