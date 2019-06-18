@@ -1,5 +1,8 @@
 mars/target
 mars/build
 mars/dist
+mars-mvn/target
+mars-mvn/build
+mars-mvn/dist
 .DS_Store
 
