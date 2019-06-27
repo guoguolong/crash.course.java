@@ -1,11 +1,12 @@
+import java.math.*;
 import java.util.*;
 
 /**
- * This program demonstrates a <code>for</code> loop.
+ * This program uses big numbers to compute the odds of winning the grand prize in a lottery.
  * @version 1.20 2004-02-10
  * @author Cay Horstmann
  */
-public class LotteryOdds
+public class BigIntegerTest
 {
    public static void main(String[] args)
    {
@@ -21,9 +22,11 @@ public class LotteryOdds
        * compute binomial coefficient n*(n-1)*(n-2)*...*(n-k+1)/(1*2*3*...*k)
        */
 
-      int lotteryOdds = 1;
+      BigInteger lotteryOdds = BigInteger.valueOf(1);
+
       for (int i = 1; i <= k; i++)
-         lotteryOdds = lotteryOdds * (n - i + 1) / i;
+         lotteryOdds = lotteryOdds.multiply(BigInteger.valueOf(n - i + 1)).divide(
+               BigInteger.valueOf(i));
 
       System.out.println("Your odds are 1 in " + lotteryOdds + ". Good luck!");
    }
