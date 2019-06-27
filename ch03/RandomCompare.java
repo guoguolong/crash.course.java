@@ -1,8 +1,14 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
 /**
-  * 写一个程序，产生25个int类型的随机数，对于每一个随机数，
-  * 使用if-else语句来将其分类为大于、小于，或等于紧随它而随机产生的值。
-  * Copyright (C) 2018-2019 Banyuan All rights reserved
-  */
+ * 产生25个int类型的随机数，
+ * 对于每一个随机数，
+ * 使用if-else语句来将其分类为大于、小于，或等于紧随它而随机产生的值。
+ * @version 1.0
+ * @author Yang Wen
+ *
+ */
 import java.util.Random;
 
 public class RandomCompare {
