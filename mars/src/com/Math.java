@@ -1,3 +1,6 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
 package com;
 
 public class Math {

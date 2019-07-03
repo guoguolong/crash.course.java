@@ -1,8 +1,11 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
+
 package com.banyuan.mars.library;
 
 import java.io.File;
 import java.util.*;
-
 
 public class Bookshelf {
 
