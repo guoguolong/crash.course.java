@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
+
 package com.banyuan.mars;
 
 import com.banyuan.mars.library.*;

@@ -1,12 +1,16 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
+
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSplitPane;
 import javax.swing.JList;
 import javax.swing.ImageIcon;
+
 /**
 * swing 实战窗口拆分
-* Created by admin on 2017/7/10.
 */
 public class JsplitPane extends JFrame {
     private JSplitPane jSplitPane;

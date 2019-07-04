@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
+
 package com.banyuan.mars.library;
 
 import java.io.*;
@@ -5,7 +9,6 @@ import java.util.ArrayList;
 import org.apache.commons.csv.*;
 
 @SuppressWarnings("unchecked")
-
 public class MasterReader {
     public static ArrayList parse(String file) throws Exception {
         // Reader in = new StringReader("a,b,c");
