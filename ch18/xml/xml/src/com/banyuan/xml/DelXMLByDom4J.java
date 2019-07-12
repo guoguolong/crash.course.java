@@ -1,3 +1,12 @@
+/*
+ * Copyright (C) 2018-2019 Banyuan All rights reserved
+ */
+/**
+ * xml处理：删除
+ * @version 1.0
+ * @author Yang Wen
+ *
+ */
 package com.banyuan.xml;
 
 import java.io.FileOutputStream;
