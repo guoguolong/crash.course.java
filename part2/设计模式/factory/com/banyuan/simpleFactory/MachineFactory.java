@@ -10,6 +10,7 @@
  * @author Yang Wen
  *
  */
+package com.banyuan.simpleFactory;
 public class MachineFactory {
     public Machine produce(String types) {
         if ("red".equals(types)) {

@@ -7,6 +7,8 @@
  * @author Yang Wen
  *
  */
+package com.banyuan.simpleFactory;
+
 public class RedMachine implements Machine {
     @Override
     public void work() {

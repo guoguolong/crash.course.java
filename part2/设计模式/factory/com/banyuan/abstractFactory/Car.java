@@ -2,11 +2,13 @@
  * Copyright (C) 2018-2019 Banyuan All rights reserved
  */
 /**
- * 简单工厂，接口：机器共同的方法work
+ * Car实现类
  * @version 1.0
  * @author Yang Wen
  *
  */
-public interface Machine{
-	void work();
+package com.banyuan.abstractFactory;
+
+public class Car implements Vehicle {
+
 }

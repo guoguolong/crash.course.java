@@ -2,12 +2,13 @@
  * Copyright (C) 2018-2019 Banyuan All rights reserved
  */
 /**
- * 工厂方法
+ * Food接口
  * @version 1.0
  * @author Yang Wen
  *
  */
-public interface FactoryMethod {
-    Machine produce();
-    Machine repair();
+package com.banyuan.abstractFactory;
+
+public interface Food {
+
 }
