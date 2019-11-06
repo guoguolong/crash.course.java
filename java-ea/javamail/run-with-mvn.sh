@@ -1,1 +1,0 @@
-mvn clean package dependency:copy-dependencies && java -jar target/mailclient-1.0-jar-with-dependencies.jar
