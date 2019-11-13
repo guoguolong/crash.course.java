@@ -2,6 +2,6 @@
 <html>
     <body>
         <h1>Taglib Sample!</h1>
-        <b:echo value="HELLO ECHO" />
+        <b:echo value="HELLO ECHO OK" />
     </body>
 </html>
