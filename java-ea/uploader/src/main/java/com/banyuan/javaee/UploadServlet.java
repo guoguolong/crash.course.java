@@ -22,11 +22,10 @@ public class UploadServlet extends HttpServlet {
         }
         String fileName = null;;
         try {
-            Part part;
-            part = request.getPart("file");
+            Part part = request.getPart("file");
             String header = part.getHeader("content-disposition");
             fileName = getFileName(header);
-            part.write(savePath + File.separator+fileName);
+            part.write(savePath + File.separator + vfileName);
         } catch (Exception e) {
             e.printStackTrace();
             fileName = null;
