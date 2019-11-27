@@ -1,13 +1,13 @@
-package club.banyuan.tank;
+package club.banyuan.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TankApplication {
+public class WebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TankApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 
 }

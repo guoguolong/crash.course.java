@@ -1,10 +1,10 @@
-package club.banyuan.tank;
+package club.banyuan.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TankApplicationTests {
+class WebApplicationTests {
 
 	@Test
 	void contextLoads() {
