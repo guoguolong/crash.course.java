@@ -1,7 +1,5 @@
-package com.banyuan.api1;
+package com.banyuan.api.obj;
 
-
-import java.util.function.Function;
 
 public class APIDemo1{
 
