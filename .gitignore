@@ -11,3 +11,4 @@ java-se/**/.idea
 java-se/**/*.jad
 java-se/**/*.iml
 java-se/**/out/
+java-ee/**/.idea
