@@ -6,8 +6,6 @@ mars-mvn/build
 mars-mvn/dist
 .DS_Store
 
-target
-
 *.class
 java-se/**/.idea
 java-se/**/*.jad
