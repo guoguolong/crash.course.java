@@ -11,4 +11,4 @@ java-se/**/.idea
 java-se/**/*.jad
 java-se/**/*.iml
 java-se/**/out
-zhanguo/**/target
+java-se/zhanguo/**/target
