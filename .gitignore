@@ -10,5 +10,5 @@ mars-mvn/dist
 java-se/**/.idea
 java-se/**/*.jad
 java-se/**/*.iml
-java-se/**/out/
-zhanguo/**/target/
+java-se/**/out
+zhanguo/**/target
