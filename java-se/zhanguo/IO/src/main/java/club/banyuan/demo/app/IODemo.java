@@ -1,4 +1,4 @@
-package club.banyuan.demo;
+package club.banyuan.demo.app;
 
 import org.junit.jupiter.api.Test;
 
