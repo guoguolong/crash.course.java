@@ -13,3 +13,5 @@ java-se/**/*.jad
 java-se/**/*.iml
 java-se/**/out
 java-se/zhanguo/**/target
+java-se/**/*.jpg
+java-se/**/*.csv
