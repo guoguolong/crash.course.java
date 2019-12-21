@@ -7,11 +7,12 @@ mars-mvn/build
 mars-mvn/dist
 .DS_Store
 
+*.jpg
+*.csv
 *.class
+
 java-se/**/.idea
 java-se/**/*.jad
 java-se/**/*.iml
 java-se/**/out
 java-se/zhanguo/**/target
-java-se/**/*.jpg
-java-se/**/*.csv
