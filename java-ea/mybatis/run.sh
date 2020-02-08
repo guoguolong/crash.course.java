@@ -1,1 +1,0 @@
-mvn clean package exec:java -Dexec.mainClass="club.banyuan.App"
