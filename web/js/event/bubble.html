@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<body id="main">
+    <input type="button" value="击鼓" id="play-drum">
+    <input type="button" value="弹吉他" id="play-guitar"><br/>
+    <div id="container"></div>
+</body>
+<script type="text/javascript">
+    var containerNode = document.getElementById('container');
+    document.getElementById('play-drum').addEventListener('click', function(evt) {
+        containerNode.innerHTML += '<br/>点击了"击鼓"按钮';
+    })
+
+    document.getElementById('play-guitar').addEventListener('click', function(evt) {
+        evt.stopPropagation();
+        containerNode.innerHTML += '<br/>点击了"弹吉他"按钮';
+    })
+
+    document.getElementById('main').addEventListener('click', function(evt) {
+        containerNode.innerHTML += '<br/>点击了BODY';
+    })
+</script>

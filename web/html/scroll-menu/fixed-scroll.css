@@ -1,0 +1,22 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.page .nav {
+    position: relative;
+    width: 250px;
+}
+.page .nav-inner {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+
+    background: #efefef;
+    width: 250px;
+    min-width: 250px;
+    overflow: auto;
+}
+.page .content {
+    margin-top: 100px;
+}

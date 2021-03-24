@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+Parent Page<br/>
+<button onclick="openSubWindow()">Open Sub Window</button><br/>
+<button id="child-btn" style="display:none" onclick="sendMsgToTabChild()">Send Message to tab child window</button>
+<div id="msg" />
+<script type="text/javascript">
+var childTabWin;
+function openSubWindow() {
+	childTabWin = window.open("http://api.banyuan.me/win/tab_child.html");
+	if (childTabWin) {
+		document.getElementById('child-btn').style.display = 'block';
+	}
+}
+
+function sendMsgToTabChild(argument) {
+	childTabWin.postMessage("儿子，我给你送饭来了", 'http://api.banyuan.me');
+}
+window.addEventListener('message', function (event) {
+
+	console.error("I'm parent, got: ", JSON.stringify(event.data));
+	var oldContent = document.getElementById('msg').innerHTML;
+	document.getElementById('msg').innerHTML = oldContent + '<br/> I\'m parent, got: ' +  JSON.stringify(event.data)
+});
+</script>

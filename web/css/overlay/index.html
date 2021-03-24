@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <meta charset="UTF-8" />
+      <title>弹出框</title>
+    </head>
+    <body>
+      <nav><a href="javascript:void(0);" onclick="on('dialog')">登录</a></nav>
+      <div id="dialog">
+        <h1>用户登录</h1>
+        <div><label>用户名：</label><input type="" name="username"></div>
+        <div><label>密码：</label><input type="" name="password"></div>
+        <input type="submit" name="" value="登 录">
+      </div>
+      <div id="overlay" onclick="off('dialog')"></div>
+      
+      <div class="content">
+        让朋友低估你的优点，让敌人高估你的缺点。在那个时代，人们仿佛都要这样。就这样才能让朋友更亲近，让敌人不知道你的底细。这样才能活得更久。险恶的时代险恶的方法，聪明的对待。
+      </div>
+      <script type="text/javascript" src="overlay.js"></script>
+    </body>
+</html>

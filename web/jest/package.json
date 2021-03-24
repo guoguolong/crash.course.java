@@ -1,0 +1,21 @@
+{
+  "name": "jest-hello",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@testing-library/dom": "^7.5.7",
+    "@testing-library/jest-dom": "^5.7.0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

@@ -1,0 +1,29 @@
+<script>
+var Animal = function(name, weight) {
+  this.name = name;
+  this.weight = weight;
+}
+Animal.prototype.isAlive = true;
+Animal.prototype.sayHello = function() {
+  return "Hello";
+};
+
+var dog = Object.create(Animal.prototype, {
+  // foo会成为所创建对象的数据属性
+  foo: { 
+    writable:true,
+    configurable:true,
+    value: "hello" 
+  },
+  // bar会成为所创建对象的访问器属性
+  bar: {
+    configurable: false,
+    get: function() { return 10 },
+    set: function(value) {
+      console.log("Setting `o.bar` to", value);
+    }
+  }
+});
+console.log(dog);
+console.log(dog.sayHello());
+</script>

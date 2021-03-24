@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <style type="text/css">
+    #bar { position: relative; }
+    /* 知道容器高度，可用top绝对值 */ 
+    #bar .avatar { 
+        position: absolute;
+        top: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        
+    }
+    /* 不知道容器高度，可用top百分比 */ 
+    /*
+    #bar .avatar { 
+        position: absolute;
+        top: 10px;
+        top: 50%;
+        transform: translate(0, -50%);        
+    }
+    */
+    #bar .links { 
+        margin-left: 25px;
+        line-height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <img class="avatar" src="avatar.svg" />
+        <span class="links">
+            <a href="#">登录</a> &nbsp;|&nbsp; <a href="#">注册</a>
+        </span>
+    </div>
+</body>
+</html>
+

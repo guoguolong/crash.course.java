@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img.diamond {
+      width: 400px;
+      height: 260px;
+      border: 1px solid gray;
+      overflow: hidden;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      transition: 0.5s clip-path;
+    }
+    img.diamond:hover {
+      clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+<body>
+  <img class="diamond" src="../../images/giraffe.png" />
+</body>
+</html>

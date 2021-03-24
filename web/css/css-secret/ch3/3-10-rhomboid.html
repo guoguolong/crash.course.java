@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .button {
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+      color: white;
+      background: green;
+      margin: 20px;
+    }
+    .rhomboid {
+      transform: skewX(-30deg);
+    }
+    .rhomboid > div {
+      transform: skewX(30deg);
+    }
+    .rhomboid2 {
+      position: relative;
+      background: none;
+    }
+    .rhomboid2::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #58a;
+      z-index: -1;
+      transform: skewX(-30deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="button rhomboid">
+    <div>aboriginal</div>
+  </div>
+  <div class="button rhomboid2">
+    <div>Russina</div>
+  </div>
+</body>
+</html>

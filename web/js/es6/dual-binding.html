@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>defineProperty</title>
+</head>
+
+<body>
+name:<input type="text" id="name" /><br />
+age: <input type="number" id="age" /><br />
+
+name:<span id="namep"></span><br />
+age: <span id="agep"></span>
+
+<script>
+function Model() {
+}
+Model.prototype.data = {
+    name: "Koda",
+    age: 20
+}
+
+let dataObj = new Model();
+
+Object.keys(dataObj.data).forEach(prop => {
+    Object.defineProperty(dataObj, prop, {
+        get: function() {
+            return dataObj[prop];
+        },
+        set: function(newValue) {
+            document.getElementById(`${prop}p`).innerHTML = newValue;
+            dataObj.data[prop] = newValue;
+        }
+    });
+});
+
+document.getElementById("name").addEventListener('keyup', function(e) {
+    dataObj["name"] = e.target.value;
+});
+
+document.getElementById("age").addEventListener('keyup', function(e) {
+    dataObj["age"] = e.target.value;
+});
+</script>
+</body>
+</html>

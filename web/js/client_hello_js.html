@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Js</title>
+</head>
+<body>
+  您的大名：<input type="text" name="fullname" id="name"/>
+  <input id="btn" type="button" value="算一卦">
+  <script>
+    document.getElementById('btn').
+        addEventListener('click', function(event) {
+          var fullname = document.getElementById('name').value;
+          alert('我猜你是' + fullname + '小朋友');
+          console.log('输入了' + fullname) // 调试用语句.
+    });
+  </script>
+</body>
+</html>

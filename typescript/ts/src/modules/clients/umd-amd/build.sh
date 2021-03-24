@@ -1,0 +1,1 @@
+tsc --module amd md5-client.ts

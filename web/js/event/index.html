@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<body>
+    <div id="content"></div>
+    <input type="button" value="显示" id="show-btn">
+</body>
+<script type="text/javascript">
+    var contentNode = document.getElementById('content');
+    document.getElementById('show-btn').addEventListener('click', function() {
+        contentNode.innerHTML = contentNode.innerHTML + '<br/>点击了"显示"按钮';
+    })
+
+    window.onload = function() {
+        contentNode.innerHTML = '文档加载完毕';
+    };
+</script>

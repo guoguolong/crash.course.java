@@ -1,0 +1,12 @@
+.page .content {
+    padding: 20px 50px 20px 50px;
+}
+.page .nav {
+    /*position: relative;*/
+    background: #efefef;
+}
+.page .nav-inner {
+    width: 250px;
+    min-width: 250px;
+    overflow: auto;
+}

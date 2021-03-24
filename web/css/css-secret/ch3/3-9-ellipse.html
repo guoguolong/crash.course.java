@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .half {
+      width: 200px;
+      height: 150px;
+      background: green;
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0
+    }
+    .quarter {
+      width: 200px;
+      height: 150px;
+      background: green;
+      border-radius: 100% 0 0 0 / 100% 0 0 0
+    }
+    .blog-button {
+      box-shadow: 
+        inset rgba(255,254,255,0.6) 0 0.3em .3em, 
+        inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ 
+        hsl(88, 70%, 40%) 0 .1em 3px,
+        hsl(88, 70%, 30%) 0 .3em 1px, /* color border */
+        rgba(0,0,0,0.2) 0 .5em 5px;      
+      border-radius: 10px;
+      background: hsl(88, 70%, 60%)
+      border-top: 1px solid rgba(255,255,255,0.8);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      background-image: radial-gradient(rgba(0, 200, 0, 0.1) 30%, rgba(0, 200, 0, 0.4) 60%, rgba(0, 200, 0, 0.8));
+      width: 100px;
+      padding: 8px;
+      margin: 4px;
+      text-align: center;
+      color: hsl(88, 70%, 30%) !important;
+      font: 24px/1em 'Droid Sans', sans-serif;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="half"></div>
+  <div class="quarter"></div>
+  <div class="blog-button">Blog</div>
+</body>
+</html>

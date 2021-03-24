@@ -1,0 +1,12 @@
+<script src="es6.js"></script>
+
+<script>
+var fruits = ['Apple', 'Orange', 'Apple'];
+if (Array.from) {
+    document.write('Fruits : ' + Array.from(new Set(fruits)));
+} else {
+    document.write('Array.from is ' + Array.from);
+    document.write('<br/>Uncomment &lt;!-- &lt;script src="es6.js">&lt;/script> --> in source codes then try again.')
+}
+</script>
+

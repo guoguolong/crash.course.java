@@ -1,0 +1,17 @@
+.page .content {
+    padding: 20px 50px 20px 50px;
+}
+.header {
+    top: 0px;
+    position: sticky;
+}
+.page .nav {
+    background: #efefef;
+}
+.page .nav-inner {
+    top: 100px;
+    position: sticky;
+    width: 250px;
+    min-width: 250px;
+    overflow: auto;
+}

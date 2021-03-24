@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+* {
+}
+body {
+  background: url('../../images/giraffe.png') 0 / cover fixed;  
+}
+main {
+  width: 700px;
+  line-height: 2em;
+  padding: 10px;
+  margin: 50px auto;
+  font-size: 30px;
+  background: hsla(0,0%,100%,.3);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main::before {
+  content: '';
+  position: absolute;
+  /*top: -20px; right: -20px; bottom: -20px; left: -20px; */
+  top: -0px; right: -0px; bottom: -0px; left: -0px; 
+  z-index: -1;
+  /*background: rgba(255,0,0,0.5); */
+  background: url('../../images/giraffe.png') 0 / cover fixed;  
+  filter: blur(20px);
+  margin: -30px;
+}
+  </style>
+</head>
+<body>
+  <main>
+    <blockquote>“The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself, with desire for what its monstrous laws have made monstrous and unlawful.”</em>
+<footer>— <cite>Oscar Wilde, The Picture of Dorian Gray</cite></footer>
+    </blockquote>
+  </main>
+</body>
+</html>

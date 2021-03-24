@@ -1,0 +1,11 @@
+header .login {
+    margin-right: 3px; 
+    background: url('../images/menu.svg') no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+header .login .inner { display: none; }
+
+div#container { width: 100%; }

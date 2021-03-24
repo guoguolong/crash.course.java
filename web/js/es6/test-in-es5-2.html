@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<div id="a"></div>
+<div id="b"></div>
+<div id="c"></div>
+<div id="d"></div>
+<div id="e"></div>
+<div id="f"></div>
+<div id="g"></div>
+<div id="h"></div>
+<div id="z"></div>
+<script>
+    function mixArgs(first ,second) {
+        // "use strict";
+
+        document.getElementById('a').innerHTML = 'a: '+ (first === arguments[0]);
+        document.getElementById('b').innerHTML = 'b: '+ (second === arguments[1]);
+        first = "c"
+        second = "d"
+        document.getElementById('c').innerHTML = (first === arguments[0]);
+        document.getElementById('d').innerHTML = (second === arguments[1]);
+    }
+    mixArgs("a", "b")
+</script>

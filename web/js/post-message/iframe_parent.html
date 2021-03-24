@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<style>
+.iframe {
+	width: 400px;
+	height: 200px;
+	border: 1px solid gray;
+}
+</style>
+<button onclick="sendMsgToChild()">Send Message to child</button>
+<iframe id="iframe" src="http://api.banyuan.me/win/iframe_child.html" class="iframe"></iframe>
+
+<script type="text/javascript">
+function sendMsgToChild(argument) {
+	iframe.contentWindow.postMessage("孩子，我给你送饭来了", 'http://api.banyuan.me');
+}
+window.addEventListener('message', function (e) {
+	console.error("I'm parent, got: ", event.data)
+})
+</script>

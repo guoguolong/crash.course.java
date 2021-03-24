@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .box img {
+      width: 400px;
+      filter: sepia(1) saturate(4) hue-rotate(295deg);
+    }
+   
+    .box img:hover {
+      filter: sepia(1) saturate(4) hue-rotate(10deg);
+      transition: 0.5s linear;
+    }
+
+    .box2 {
+      background: hsl(335, 100%, 50%);
+      /*width: 400px;*/
+    }
+    .box2 img {
+      width: 400px;
+      mix-blend-mode: luminosity;
+    }
+
+    .tinted-image {
+      width: 340px; height: 230px;
+      background-size: cover;
+
+      /*background-image: url(../../images/tree-rect.jpg);*/
+      background-image: url(../../images/giraffe.png);
+      background-color: hsl(335, 100%, 50%);
+      background-blend-mode: luminosity;
+      /*transition: .5s background-color;*/
+    }
+    .tinted-image:hover {
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="../../images/giraffe.png"/>
+  </div>
+  <div class="box2">
+    <img src="../../images/giraffe.png"/>
+  </div>
+  <div class="tinted-image">
+  </div>  
+</body>
+</html>

@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<button onclick="sendMsgToParent()">Send msg to parent</button>
+<script type="text/javascript">
+function sendMsgToParent() {
+	window.parent.postMessage({
+		event:'changePoroject',
+		data:{name:'小强'}
+	},
+	'http://api.tuniu.me');
+}
+
+window.addEventListener('message', function (event) {
+	console.error("I'm child, got: ", event.data)
+});
+
+</script>

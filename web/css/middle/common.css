@@ -1,0 +1,8 @@
+* { margin: 0; font-size: 14px; text-decoration: none; color: #fff; padding: 0px;}
+a { color: #fff }
+
+#bar {
+    background: #2060a9;
+    padding: 0px 10px;
+    height: 40px;
+}

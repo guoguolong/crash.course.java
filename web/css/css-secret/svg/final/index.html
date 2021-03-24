@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test image</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+        </label>
+
+        <a href="#" class="menu-item"> <i class="fa fa-car"></i> </a>
+        <a href="#" class="menu-item"> <i class="fa fa-ship"></i> </a>
+        <a href="#" class="menu-item"> <i class="fa fa-map"></i> </a>
+        <a href="#" class="menu-item"> <i class="fa fa-suitcase"></i> </a>
+    </nav>
+    <div class="bg">
+        <div class="middle">
+            <h2 class="headline">Underwater Adventure Park</h2>
+            <div class="intro_block">
+                <h3 class="subhead">Experience the Ocean <br>Like Never Before</h3>
+                <p class="intro">Underwater Adventure Park is an experience unlinke anything you have ever had. Travel to the depths of the Ocean and walk among the Sea Life!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-head">
+        <p class="intro">Bringing the Ocean To You</p>
+        <h4>Explore the Hidden Depths</h4>
+        <p class="sub">Opening up the Mysteries of the Deep</p>
+        <p>Lorem ipsum dolor amet keffiyeh fanny pack chicharrones, before they sold out vinyl microdosing man braid hoodie chia seitan pitchfork blue bottle. Whatever crucifix DIY hexagon swag. Kogi sustainable hoodie copper mug portland vice DIY slow-carb schlitz microdosing glossier tote bag selfies. Next level brooklyn letterpress taxidermy live-edge drinking vinegar.</p>
+        <p class="sub">Engage with us.</p>
+    </div>
+    <div class="wave"><img src="img/wave.png"></div>
+    <div class="grid-3-col">
+        <div class="cell">
+            <img src="img/one.jpg" alt="Oysters Asian Style">
+            <h4>Section 1</h4>
+            <p>Kogi sustainable hoodie copper mug portland vice DIY slow-carb schlitz microdosing glossier tote bag selfies.</p>
+            <a href="#" class="button">Meet our team</a>
+        </div>
+        <div class="cell">
+            <img src="img/two.jpg" alt="The best breakfast">
+            <h4>Section 2</h4>
+            <p>Lorem ipsum dolor amet keffiyeh fanny pack chicharrones, before they sold out vinyl microdosing man braid</p>
+            <a href="#" class="button">Explore our places</a>
+        </div>
+        <div class="cell">
+            <img src="img/three.jpg" alt="Oodles of Noodles">
+            <h4>Section 3</h4>
+            <p>Microdosing glossier tote bag selfies. Next level brooklyn letterpress taxidermy live-edge drinking vinegar.</p>
+            <a href="#" class="button">Discover our stories</a>
+        </div>
+    </div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <filter id="displacementFilter">
+            <feTurbulence type="turbulence" baseFrequency="0.004" numOctaves="2" result="turbulence" />
+
+            <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="30" xChannelSelector="R" yChannelSelector="G" result="disp" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blr" />
+            <feComposite in="blr" in2="disp" operator="in" result="comp" />
+
+            <feMerge result="final">
+                <feMergeNode in="blr" />
+                <feMergeNode in="comp" />
+            </feMerge>
+
+        </filter>
+        <filter id="shadowed-blob">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="20" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="blob" />
+            <feGaussianBlur in="blob" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+            <feOffset in="shadow" dx="0" dy="2" result="shadow" />
+            <feComposite in2="shadow" in="blob" result="blob" />
+            <feComposite in2="blob" in="SourceGraphic" result="mix" />
+        </filter>
+
+    </svg>
+
+</body>
+
+</html>

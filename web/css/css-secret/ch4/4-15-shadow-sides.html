@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      box-sizing: border-box;
+      background: lightgreen;
+      margin: 10px 10px 30px 20px;
+    }
+    .box1 {
+      box-shadow: 160px 0px 10px 0px rgba(0,0,0,1);
+    }
+    .box2 {
+      box-shadow: 160px 0px 0px 10px rgba(0,0,0,1);
+    }
+    .box3 {
+      box-shadow: 160px 0px 10px 10px rgba(0,0,0,1);
+    }
+    .box4 {
+      box-shadow: 0px 10px 10px -10px rgba(0,0,0,1);
+    }
+    .box5 {
+      box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.8);
+    }
+    .box6 {
+      box-shadow: 
+      -10px 0px 10px -10px rgba(0,0,0,0.8),
+      10px 0px 10px -10px rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">blur:10px</div>
+  <div class="box box2">spread:10px</div>
+  <div class="box box3">blur:10, spread:10</div>
+  <div class="box box4">单边阴影</div>
+  <div class="box box5">邻边阴影(移动5px，不足以隐藏投影在边里，所以spread -=5)</div>
+  <div class="box box6">双侧阴影</div>
+</body>
+</html>

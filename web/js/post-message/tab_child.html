@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+Child Page<br/>
+<button onclick="sendMsgToParent()">Send Msg to tab parent window</button>
+<div id="msg" />
+<script type="text/javascript">
+function sendMsgToParent(argument) {
+	window.opener.postMessage({
+		event:'changePoroject',
+		data: { name: '小强' }
+	},
+	'http://api.tuniu.me');
+}
+
+window.addEventListener('message', function (event) {
+	console.error("I'm child, got: ", event.data)
+	var oldContent = document.getElementById('msg').innerHTML;
+	document.getElementById('msg').innerHTML = oldContent + '<br/> I\'m parent, got: ' +  JSON.stringify(event.data)
+});
+
+</script>

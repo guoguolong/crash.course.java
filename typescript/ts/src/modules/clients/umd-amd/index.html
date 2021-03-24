@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+	<div id="content"></div>
+	<script type="text/javascript" src="../../libs/require.js"></script>
+	<script type="text/javascript">
+		requirejs(["md5-client"], function (client) {
+			var s = '8911332';
+			document.getElementById('content').innerHTML = "md5(" + s + ") = " + client.echo(s)
+		});
+	</script>
+</body>
+
+</html>

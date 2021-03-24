@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .box {
+      margin: 100px;
+      width: 200px;
+      height: 200px;
+      background: #58a;
+      background-image: url('../../images/giraffe.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      clip-path: polygon(
+        20px 0, 
+        calc(100% - 20px) 0,
+
+        100% 20px,
+        100% calc(100% - 20px),
+
+        calc(100% - 20px) 100%,
+        20px 100%,
+
+        0 calc(100% - 20px),
+        0 20px
+      );
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+   Partial support can be enabled on MS Edge with the Enable CSS Clip-Path Flag
+  </div>
+</body>
+</html>

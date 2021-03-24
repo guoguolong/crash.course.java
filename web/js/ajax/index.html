@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<pre id="csv"></pre>
+<script>
+  var httpxml ;
+  if(window.XMLHttpRequest) {
+    httpxml = new XMLHttpRequest();  //大多数浏览器
+  } else {
+    httpxml = new ActiveXObject("Microsoft.XMLHTTP"); // 古董级 IE浏览器
+  }
+  httpxml.onreadystatechange =function () {
+    var e = document.getElementById('csv');
+    if(httpxml.readyState == 4 && httpxml.status == 200){
+      e.innerHTML = httpxml.responseText;
+    }else{
+      e.innerHTML = "发生了错误";
+    }
+  }
+  httpxml.open("get", "http://camp.banyuan.club/users.php", true);
+  httpxml.send();
+</script>

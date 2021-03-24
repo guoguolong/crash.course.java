@@ -1,0 +1,10 @@
+.page .nav {
+    background: #efefef;
+}
+.page .nav-inner {
+    top: 0;
+    position: sticky;
+    width: 250px;
+    min-width: 250px;
+    overflow: auto;
+}

@@ -1,0 +1,11 @@
+<button id="md5-btn">
+    MD5 BUTTON
+</button>
+<script src="sea.min.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+seajs.use(["message"], function(msg) {
+  msg.addListener('md5-btn');
+  console.log(msg.getHello());
+});
+</script>
