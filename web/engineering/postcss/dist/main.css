@@ -1,0 +1,22 @@
+::placeholder {
+	color: gray;
+}
+
+.image {
+	backface-visibility: hidden;
+	background-image: url(image@1x.png);
+}
+
+.block {
+	display: flex;
+	backface-visibility: hidden;
+	box-shadow: 10px 10px 5px #A00;
+}
+
+.myClass {
+	animation-name: fadeIn;
+}
+
+keyframes fadeIn {
+	0% { opacity: 0; } 100% { opacity: 0; }
+}
