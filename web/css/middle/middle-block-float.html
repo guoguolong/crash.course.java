@@ -5,28 +5,28 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="common.css" />
     <style type="text/css">
-    #bar { 
-        position: relative;
+    .clearfix:after {
+        content: "\20";
+        display: block;
+        height: 0;
+        clear: both;
     }
-    
-    #bar .avatar { 
-        position: absolute;
-        /* 知道容器高度，可用top绝对值 */         
-        top: 20px;
-        /* 不知道容器高度，可用top百分比 + transform */
-        top: 50%;
-        transform: translate(0, -50%);
-        
+    #bar >* {
+        float: left;
+    }
+    #bar .avatar {
+        box-sizing: border-box;
+        padding-top: 10px;
     }
 
     #bar .links { 
-        margin-left: 25px;
+        margin-left: 6px;
         line-height: 40px;
     }
     </style>
 </head>
 <body>
-    <div id="bar">
+    <div id="bar" class="clearfix">
         <img class="avatar" src="avatar.svg" />
         <span class="links">
             <a href="#">登录</a> &nbsp;|&nbsp; <a href="#">注册</a>

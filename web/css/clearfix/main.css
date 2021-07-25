@@ -13,7 +13,7 @@
 }
 .pink {
     background: pink;
-    width: 600px;
+    width: 400px;
 }
 .clearfix:after {
     content: "\20";
