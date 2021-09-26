@@ -1,0 +1,49 @@
+.sprite-image(@url) {
+  background: url(@url) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.animation-sprite(@width, @height) {
+  @steps: 24;
+  animation: spite-box .5s steps(@steps);
+  animation-fill-mode: forwards;
+  @keyframes spite-box {
+    0% {
+      background-position: @width 0;
+    }
+
+    100% {
+      background-position: @width -(@steps*@height);
+    }
+  }
+}
+
+.animation-sprite-backwards(@width, @height) {
+  @steps: 24;
+  animation: spite-box-backwards .5s steps(@steps);
+  @keyframes spite-box-backwards {
+    0% {
+      background-position: @width -(@steps*@height);
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
+.image-wrapper {
+  margin: 0 auto;
+  @box-width: 252px;
+  @box-height: 154px;
+  width: @box-width;
+  height: @box-height;
+  .sprite-image('../../images/globe.png');
+
+  &:hover {
+    .animation-sprite(0, @box-height);
+  }
+  &:not(:hover) {
+    .animation-sprite-backwards(0, @box-height);
+  }
+}
