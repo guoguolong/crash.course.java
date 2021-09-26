@@ -1,0 +1,1 @@
+.image-wrapper{width:252px;height:154px;background:url(../../images/globe.png) 0 0 no-repeat;background-size:cover}.image-wrapper:hover{animation:spite-box .5s steps(24);animation-fill-mode:forwards}@keyframes spite-box{0%{background-position:0 0}100%{background-position:0 -3696}}

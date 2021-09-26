@@ -1,0 +1,22 @@
+.animation-sprite(@width) {
+    background: url('https://uploads.codesandbox.io/uploads/user/abc364e4-ea65-4398-a1dc-df2645675b64/U59a-lightbulb.png') 0 0 no-repeat;
+    background-size: cover;
+    animation: spite-box 10s steps(4) infinite;
+    @keyframes spite-box {
+        from {
+            background-position: -8*@width;
+        }
+        to {
+            background-position: -12*@width;
+        }
+    }
+}
+
+.image-wrapper{
+    @box-width: 134px;
+    @box-height: 113px;
+    border: 1px solid gray;
+    width: @box-width;
+    height: @box-height;
+    .animation-sprite(@box-width);
+}
