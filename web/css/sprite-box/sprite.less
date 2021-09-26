@@ -18,7 +18,21 @@
   }
 }
 
+.animation-sprite-backwards {
+  animation: spite-box-backwards .5s steps(24);
+  @keyframes spite-box-backwards {
+    0% {
+      background-position: 0 -(24*154px);
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
 .image-wrapper {
+  margin: 0 auto;
   @box-width: 252px;
   @box-height: 154px;
   width: @box-width;
@@ -26,6 +40,6 @@
   .sprite-image('../../images/globe.png');
 
   &:hover {
-    .animation-sprite(0, 154);
+    .animation-sprite(0, @box-height);
   }
 }

@@ -1,2 +1,8 @@
 <link rel="stylesheet" type="text/css" href="sprite.css">
- <div class="image-wrapper" />
+<div class="image-wrapper" />
+<script type="text/javascript">
+document.querySelector('.image-wrapper').onmouseleave = (e) => {
+    e.target.classList.remove('animation-sprite-backwards');
+    e.target.classList.add('animation-sprite-backwards');
+}
+</script>
